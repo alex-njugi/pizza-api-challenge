@@ -1,0 +1,81 @@
+{
+  "info": {
+    "name": "Pizza Challenge",
+    "_postman_id": "12345",
+    "description": "Postman tests for Pizza API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all restaurants",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/restaurants",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["restaurants"]
+        }
+      }
+    },
+    {
+      "name": "Get restaurant by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/restaurants/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["restaurants", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete restaurant by ID",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/restaurants/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["restaurants", "1"]
+        }
+      }
+    },
+    {
+      "name": "Get all pizzas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/pizzas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["pizzas"]
+        }
+      }
+    },
+    {
+      "name": "Post restaurant_pizza",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 10,\n  \"pizza_id\": 1,\n  \"restaurant_id\": 2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/restaurant_pizzas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["restaurant_pizzas"]
+        }
+      }
+    }
+  ]
+}
