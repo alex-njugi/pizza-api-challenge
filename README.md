@@ -6,7 +6,7 @@ A RESTful API for managing restaurants, pizzas, and their relationships. Built w
 
 # 1. Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/pizza-api-challenge.git
+git clone git@github.com:alex-njugi/pizza-api-challenge.git
 cd pizza-api-challenge
 
 # 2. Install Dependencies
